@@ -97,3 +97,7 @@ h4 {
     grid-area: right content;
 }
 
+
+@media only screen and (max-width:600) {
+    .flexContainer{flex-direction:column;}
+}
