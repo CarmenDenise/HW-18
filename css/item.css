@@ -36,6 +36,7 @@ li {
 .heroImg {
     height: 600px;
     padding: 25px;
+    padding-bottom: 50px;
 }
 
 .content {
@@ -77,6 +78,9 @@ h4 {
     display:inline-block;
 }
 
+h3 {
+    text-align:center;
+}
 
 
 .flexContainer {
@@ -86,7 +90,19 @@ h4 {
 
 .workGrid {
     display:grid;
+    grid-template-columns:50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 80px;
     justify-content:center;
+}
+
+.workGrid2 {
+    display:grid;
+    grid-template-columns:50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 80px;
+    justify-content:center;
+
 }
 
 .projectOne {
@@ -97,7 +113,27 @@ h4 {
     grid-area: right content;
 }
 
+.mySkills{
+    padding-bottom: 100px;
+}
+
+.myWork {
+    padding-bottom: 120px;
+}
+
 
 @media only screen and (max-width:600) {
     .flexContainer{flex-direction:column;}
 }
+
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .workGrid {
+      grid-template-columns:1fr;
+    }
+  }
