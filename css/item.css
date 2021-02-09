@@ -73,4 +73,14 @@ h4 {
 
 .workGrid {
     display:grid;
+    justify-content:center;
 }
+
+.projectOne {
+    grid-area:left content;
+}
+
+.projectTwo{
+    grid-area: right content;
+}
+
